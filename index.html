@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduGrow.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn"><div class="top">&#8593</div></button>
+	<!--navbar-->
+	<nav class="navbar" id="navbar">
+		<div class="content">
+			<div class="logo"><a href="#">Edugrow</a></div>
+			<ul class="menu-list">
+				<div class="icon cancel-btn">
+					<i class="fas fa-times"></i>
+				</div>
+				<li><a href="#home" class="active">home</a></li>
+				<li><a href="#about">about us</a></li>
+				<li><a href="courses.html">courses</a></li>
+				<li><a href="notification.html">notification</a></li>
+				<li><a href="downloads.html">downloads</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html">register</a></li>
+				<li><a href="#contact">contact</a></li>		
+			</ul>
+			<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+
+	
+	<!-- home-section-->
+	<div class="div">
+	<section class="homesection" id="home">
+	  <video src="img/bgvedio.mp4" muted loop autoplay></video>
+	  <div class="overlay"></div>
+	  <div class="text">
+	    <h6>Hello Students </h6>
+	    <h2>Welcome to EduGrow University</h2>
+	    <p>An investment in knowledge pays the best Interest</p>
+	    <div class="main-button-yellow">
+            <a href="#contact">Apply Now !</a>
+        </div>
+	  </div>
+	  <ul class="social">
+	    <li><a href="#"><img src="img/facebook.png"></a></li>
+	    <li><a href="#"><img src="img/twitter.png"></a></li>
+	    <li><a href="#"><img src="img/instagram.png"></a></li>
+	  </ul>
+	</section>
+</div>
+<div class="div">
+	<!--about-section-->
+	<section class="about" id="about">
+		<div class="flex-container">
+			  <div class="flex-item">
+			    	<div class="package">
+			    		<div class="content">
+			    			<h1>About us !</h1><hr>
+			    				<p>Welcome to EduGrow University!. Established in the year of 1997 by Edugrow Foundations.Our campus is around 200 arces and offers aspiring engineers high quality technical education.Located in kakinada, East Godavari district of Andhra Pradesh, We provides learning community state-of-the-art facilities, infrastructure and a competent faculty.Our Institute encourages collaborative learning between industry and academia as a means of reinforcing its curriculum with practical and real world experiences. It is this emphasis on a well-rounded education that makes EDUGROW a preferred institute among engineering colleges in India.Our campus was Awarded as Second Most Clean Campus in India by AICTE.We offered many latest courses with latest technologies with labaratories.We provided libraries,20 acres of ground and best classrooms and labs.</p>
+			    			<div class="main-button-red">
+            					<a href="#contact" class="about-apply">Apply Now !</a>
+            				</div>
+			    		</div>
+			   	  	</div>
+			   </div>
+			   <div class="flex-item">
+			   		<div class="package">
+			   			<div class="pack-row">
+			   				<div class="pack-col percent">
+                    			<div class="count-digit" id="placements">90</div>
+                   			 	<div class="count-title">Placements</div>
+                  			</div>
+                  			<div class="pack-col">
+                    			<div class="count-digit" id="professor">450</div>
+                   			 	<div class="count-title">Professors</div>
+                  			</div>
+			   			</div>
+			   			<div class="pack-row">
+			   				<div class="pack-col">
+                    			<div class="count-digit" id="students">5000</div>
+                   			 	<div class="count-title">Students</div>
+                  			</div>
+                  			<div class="pack-col">
+                    			<div class="count-digit" id="awards">55</div>
+                   			 	<div class="count-title">Awards</div>
+                  			</div>
+			   			</div>
+			   		</div>
+			   </div>
+		</div>
+    </section>
+</div>
+
+<!--contact-section-->
+<div class="div">
+	<section class="contact bgimg" id="contact">
+		<div class="contact-row">
+			<div class="contact-col col-1">
+				<h1>Let's Get In Touch !</h1><hr>
+				<form name="myform">
+				<div class="col1">
+					<input type="text" name="name" id="name" placeholder="ENTER YOUR NAME ......" >
+					<input type="text" name="name" id="E-mail" pattern="[^ @]*@[^ @]*" placeholder="E-MAIL ......">
+					<input type="text" name="name" id="name"placeholder="SUBJECT ......">
+				</div>
+				<div class="col2">
+					<input type="text" name="name" id="name" placeholder="TYPE YOUR MESSAGE .......">
+				</div>
+				<div class="col3">
+					<button class="submit" onclick="validate()">Contact Us</button>
+				</div>
+				</form>
+			</div>
+			<div class="contact-col col-2">
+				<div class="col4">
+					<h1>Phone Number</h1>
+					<p>6305878367</p>
+				</div>
+				<div class="col4">
+					<h1>E-mail</h1>
+					<p>edugrow@gmail.com</p>
+				</div>
+				<div class="col4">
+					<h1>Address</h1>
+					<p>BhanuGudi junction,<br>535591,Kakinada</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+		<div class="foot-col col5">
+			<p>Copyright ©Leela Prasad Bantu. All Rights Reserved.</p>
+		</div>
+		<div class="foot-col col6">
+			<a href="#"><img src="img/facebook.png"></a>
+	    	<a href="#"><img src="img/twitter.png"></a>
+	    	<a href="#"><img src="img/instagram.png"></a>
+		</div>
+		</footer>
+	</section>
+	
+</div>
+
+	<script type="text/javascript">
+		//validation
+		function validate(){
+			var name=document.getElementById(name);
+			if (name==null || name==""){  
+  				alert("Field can't be blank"); 
+  				}
+  			var mail=document.getElementById(E-mail);
+  			alert("hi")
+		}
+
+		//fixed navbar
+		const body=document.querySelector("body");
+		const navbar=document.querySelector(".navbar");
+		const menu=document.querySelector(".menu-list");
+		const menuBtn=document.querySelector(".menu-btn");
+		const cancelBtn=document.querySelector(".cancel-btn");
+		menuBtn.onclick = ()=>{
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+			body.classList.add("disabledScroll");
+		}
+		cancelBtn.onclick = ()=>{
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide");
+			body.classList.remove("disabledScroll");
+		}
+
+		window.onscroll = ()=>{
+			scrollFunction();
+			this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+		}
+
+
+		//smooth scroll function
+				$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+
+		//for counting
+		function animateValue(id, start, end, duration) {
+			  if (start === end) return;
+			  var range = end - start;
+			  var current = start;
+			  var increment = end > start? 1 : +1;
+			  var stepTime = Math.abs(Math.floor(duration / range));
+			  var obj = document.getElementById(id);
+			  var timer = setInterval(function() {
+			      current += increment;
+			      obj.innerHTML = current;
+			      if (current == end) {
+			          clearInterval(timer);
+			      }
+			  }, stepTime);
+			}
+
+			animateValue("placements", 0, 92, 10000);
+			animateValue("professor", 0, 450, 10000);
+			animateValue("students", 4000, 5000, 10000);
+			animateValue("awards", 0, 55, 10000);  
+
+			//getting the top button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+	</script>
+</body>
+</html>

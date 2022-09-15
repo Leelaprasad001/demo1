@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduGrow.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/3224a0ed16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar" id="navbar">
+		<div class="content">
+			<div class="logo"><a href="#">Edugrow</a></div>
+			<ul class="menu-list">
+				<div class="icon cancel-btn">
+					<i class="fas fa-times"></i>
+				</div>
+				<li><a href="index.html">home</a></li>
+				<li><a href="index.html #about">about us</a></li>
+				<li><a href="#" class="active">courses</a></li>
+				<li><a href="notification.html">notification</a></li>
+				<li><a href="downloads.html">downloads</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html">register</a></li>
+				<li><a href="index.html #contact">contact</a></li>		
+			</ul>
+			<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+
+	<!--courses page-->
+	<section class="courses-img">
+		<div class="courses">
+			<h1>courses offered:</h1>
+			<div class="courses-row">
+				<div class="courses-col">
+					<img src="img/courses/cse.jfif">
+					<p>Computer Science and Engineering</p>
+					Rs. 1,00,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="index.html #contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/mech.jfif">
+					<p>Mechanical Engineering</p>
+					Rs. 90,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/eee.jfif">
+					<p>Electrical and Electronics Engineering</p>
+					Rs.90,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+			</div>
+			<div class="courses-row">
+				<div class="courses-col">
+					<img src="img/courses/cyber.jfif">
+					<p>Cyber Security</p>
+					Rs.1,00,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/civil.jfif">
+					<p>Civil Engineering</p>
+					Rs.80,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/auto.jfif">
+					<p>Automobile Engineering</p>
+					Rs.90,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+			</div>
+			<div class="courses-row">
+				<div class="courses-col">
+					<img src="img/courses/ds.jfif">
+					<p>Data Science</p>
+					Rs.1,20,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/ai.jfif">
+					<p>Artificial Intelligence</p>
+					Rs.1,20,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div>
+				</div>
+				<div class="courses-col">
+					<img src="img/courses/arch.jfif">
+					<p>Architecture</p>
+					Rs.1,20,000
+					<div class="main-button-yellow cou-btn">
+            			<a href="#contact">Apply Now !</a>
+       				 </div> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		//fixed navbar
+		const body=document.querySelector("body");
+		const navbar=document.querySelector(".navbar");
+		const menu=document.querySelector(".menu-list");
+		const menuBtn=document.querySelector(".menu-btn");
+		const cancelBtn=document.querySelector(".cancel-btn");
+		menuBtn.onclick = ()=>{
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+			body.classList.add("disabledScroll");
+		}
+		cancelBtn.onclick = ()=>{
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide");
+			body.classList.remove("disabledScroll");
+		}
+
+		window.onscroll = ()=>{
+			this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+		}
+
+	</script>
+</body>
+</html>

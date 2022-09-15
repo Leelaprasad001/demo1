@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduGrow.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/3224a0ed16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="bgimg1">
+		<span class="back"><a href="login.html"><i class="fa-solid fa-circle-left"></i></a></span>
+		<span class="btext">Back To LogIn</span>
+		<div class="col">
+			<div class="details">
+				<div class="photo row1"><img src="img/staff.jfif"></div>
+				<div class="info row1">
+					<h1> student  Details :</h1>
+					<p><b>JNTU No&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp</b>21345A0509<br><b>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp</b> Bantu Leela Prasad<br><b>Father's Name&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp</b> Bantu Appla Naidu<br><b>Department &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: &nbsp&nbsp&nbsp</b> Computer Science<br><b>Gender &nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp</b> Male &nbsp&nbsp&nbsp&nbsp&nbsp <b>Age</b> &nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp 20<br><b>Ph. No&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp</b>6305878367<br><b>E-Mail&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp</b>example@gmail.com</b></p>
+				</div>
+			</div>
+			<div class="att">
+				<h1>attendance :</h1>
+				<button class="att1" id="att1" onclick="per()">SEM-1</button>
+				<button class="att1" id="att1" onclick="per1()">SEM-2</button>
+				<button class="att1" id="att1" onclick="per()">SEM-3</button>
+				<button class="att1" id="att1" onclick="per1()">SEM-4</button>
+				<button class="att1" id="att1" onclick="per()">SEM-5</button>
+				<button class="att1" id="att1" onclick="per1()">SEM-6</button>
+				<button class="att1" id="att1" onclick="per()">SEM-7</button>
+				<button class="att1" id="att1" onclick="per1()">SEM-8</button>
+				<p class="per">Percentage : &nbsp&nbsp&nbsp<span id="per1"></span></p>
+			</div>
+			<div class="att">
+				<h1>Results :</h1>
+				<button class="att1" id="att1" onclick="cgpa()">SEM-1</button>
+				<button class="att1" id="att1" onclick="cgpa1()">SEM-2</button>
+				<button class="att1" id="att1" onclick="cgpa()">SEM-3</button>
+				<button class="att1" id="att1" onclick="cgpa1()">SEM-4</button>
+				<button class="att1" id="att1" onclick="cgpa()">SEM-5</button>
+				<button class="att1" id="att1" onclick="cgpa1()">SEM-6</button>
+				<button class="att1" id="att1" onclick="cgpa()">SEM-7</button>
+				<button class="att1" id="att1" onclick="cgpa1()">SEM-8</button>
+				<p class="per">CGPA : &nbsp&nbsp&nbsp<span id="cgpa"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Percentage : &nbsp&nbsp&nbsp<span id="per2"></span></p>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function per() {
+  			document.getElementById("per1").innerHTML = "  89 % ";
+		}
+		function per1() {
+  			document.getElementById("per1").innerHTML = "  95 % ";
+		}
+		function cgpa() {
+  			document.getElementById("cgpa").innerHTML = "  9.7";
+  			document.getElementById("per2").innerHTML = "  97 % ";
+		}
+		function cgpa1() {
+  			document.getElementById("cgpa").innerHTML = "  9.2 ";
+  			document.getElementById("per2").innerHTML = "  92 % ";
+		}
+	</script>
+</body>
+</html>
